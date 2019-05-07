@@ -1,9 +1,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 
-* {
+/* * {
 	border: black 1px solid;
-}
+} */
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -13,6 +13,35 @@ body {
 	background: #fff;
 	overflow-x: hidden;
   }
+
+.bob-brand {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+#hero-banner {
+	/* background: url(../img/hero-area.jpg) fixed no-repeat; */
+	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
+	background-size: cover;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	padding: 200px 0 130px;
+}
+
+#experience {
+	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
+	background-size: cover;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.section {
+	padding: 80px;
+}
 
 .section-header {
 	/* color: #fff; */

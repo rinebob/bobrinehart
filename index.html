@@ -14,15 +14,16 @@
 
 </head>
 <body>
-	<header>
-		<nav>
+	<header id="hero-banner">
+		<nav class="navbar nav-fill fixed-top scrolling-navbar">
 			<div class="row">
-				<div class="col-3 nav-header">
-				<span><h3>Bob Rinehart</h3></span>
-				<span><p>- Full Stack Developer</p></span>
+				<div class="col-4 nav-header justify-content-center text-center">
+				<!-- <span class="bob-brand">Bob Rinehart</span><span> - Full Stack Developer</span> -->
+				<span class="bob-brand">Bob Rinehart</span>
+				<!-- <span><p>- Full Stack Developer</p></span> -->
 				
 				</div>
-				<div class="col-9 nav-main">
+				<div class="col-8 nav-main">
 					<ul class="nav justify-content-end">
 						<li class="nav-item">
 							<a class="nav-link active" href="#home">Home</a>
@@ -50,16 +51,14 @@
 			</div>
 
 		</nav>
+		<!-- <div id="hero-banner" class="container-fluid"> -->
 		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="">
-
+				<div class="col-10 text-center">
+					<h2>Meet Bob Rinehart - Full Stack Developer</h2>
 				</div>
-
 			</div>
-
 		</div>
-
 	</header>
 
 	<section id="projects">
@@ -86,10 +85,179 @@
 
 		</div>
 	</section>
-	<section id="tech-skills">
-		
+	<section id="tech-skills" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Technical Skills</h2>
+				<hr class="horz-line">
+				<p class="section-subtitle">Some pithy comments about my coding capability...</p>
+			</div>
+			<div class="card-deck">
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Languages:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">MEAN</li>
+								<li class="list-group-item">Angular</li>
+								<li class="list-group-item">Javascript (ES5, ES6)</li>
+								<li class="list-group-item">Typescript</li>
+								<li class="list-group-item">Python</li>
+								<li class="list-group-item">Java</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Front-end:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">SPAs</li>
+								<li class="list-group-item">Angular Material</li>
+								<li class="list-group-item">Bootstrap</li>
+								<li class="list-group-item">jQuery</li>
+								<li class="list-group-item">AJAX</li>
+								<li class="list-group-item">EJS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Server:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Node.js</li>
+								<li class="list-group-item">Express</li>
+								<li class="list-group-item">Django</li>
+								<li class="list-group-item">Flask</li>
+								<li class="list-group-item">CRUD APIs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="card-deck">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Databases:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">MongoDB</li>
+									<li class="list-group-item">Mongoose</li>
+									<li class="list-group-item">MySQL</li>
+									<li class="list-group-item">SQLite</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Deployment / Tools:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Amazon AWS EC2</li>
+									<li class="list-group-item">Plesk</li>
+									<li class="list-group-item">Nginx</li>
+									<li class="list-group-item">PuTTY</li>
+									<li class="list-group-item">Git / Github</li>
+									<li class="list-group-item">GitKraken</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Methodologies:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">OOP</li>
+									<li class="list-group-item">MVC / MTV / MVVM</li>
+									<li class="list-group-item">REST</li>
+									<li class="list-group-item">APIs</li>
+									<li class="list-group-item">Agile</li>
+									<li class="list-group-item">Scrum</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				</div>
+
+		</div>
 	</section>
-	<section id="experience">
+	<section id="experience" class="section container">
+		<div class="section-header">
+			<h2 class="section-title">Professional Experience</h2>
+			<hr class="horz-line">
+			<p class="section-subtitle">Even more compelling text about my exemplary work experience...</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12">
+					<span class="icon">
+						<i class="lnr lnr-rocket"></i>
+					</span>
+					<div class="text">
+						<h4>Madrone Hill Group, Saratoga, CA  2009 - Present</h4>
+						<p>Founder / CEO - Systems Designer / Developer - Algorithmic Trading</p>
+						<p>Design and build complex algorithms for automating buy/sell orders in eletronically traded financial markets.</p>
+						<ul>
+							<li>Designed algorithms based on linear-regression models to display bounding envelopes and channels on securities charts and generate position entry and exit orders.</li>
+							<li>Designed volatility-based algorithms to filter and validate order placement based on market price dynamics.</li>
+							<li>Designed systems to automate analysis and manage positions for index option credit spread strategies.</li>
+						</ul>
+						<p></p>
+					</div>
+					<span class="icon">
+						<i class="lnr lnr-laptop-phone"></i>
+					</span>
+					<div class="text">
+						<h4>Summit Assets Group, San Jose, CA / DBNR LLC, San Jose CA  2009 - 2017</h4>
+						<p>Director of Acquisitions / Lead Systems Developer - Real Estate Investment</p>
+						<p>Managed analysis and acquisition of real estate investments.  Designed and built CRM system to manage investment analysis and acquisition process.</p>
+						<ul>
+							<li>Analyzed investment potential of over 100,000 residential properties across the US.</li>
+							<li>Purchased and rehabbed 33 housees and sold to low-income buyers to enable wealth building.</li>
+							<li>CRM system increased acquisition rate from under 10% to over 33%.</li>
+						</ul>
+					</div>
+					<div class="text">
+						<h4>Additional Work Experience</h4>
+					</div>
+					<span class="icon">
+						<i class="lnr lnr-layers"></i>
+					</span>
+					<div class="text">
+						<h4>EnData Solutions, San Carlos, CA</h4>
+						<p>Founder / CEO</p>
+						<ul>
+							<li>Designed mobile app for collecting, analyzing and visualizing data gathered during environmental investigations of chemically contaminated industrial facilities.</li>
+							<li>App automated industry-standard paper-based manual data collection and analysis systems saving hundreds of hours per investigation through automation of laborious manual methods and processes.</li>
+						</ul>
+					</div>
+					<span class="icon">
+						<i class="lnr lnr-cog"></i>
+					</span>
+					<div class="text">
+						<h4>Mobil Exploration and Production, Bakersfield, CA</h4>
+						<p>Data Visualization Technician</p>
+						<ul>
+							<li>Created topographic maps of oil reservior locations totaling billions of barrels of oil.</li>
+							<li>Maps were used to determine target locations for company to bid greater than $10 billion to acquire drilling rights from US Federal Government lease sales.</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 	</section>
 	<section id="inspiration">
@@ -99,6 +267,26 @@
 
 	</section>
 	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col">
+						<div class="contact-me text-center">
+								<h3>Contact Me</h3>
+								<div class="contact-address">
+								  <p>Silicon Valley, CA </p>
+								  <p class="phone">Phone: <span>(408) 438-7078</span></p>
+								  <p class="email">E-mail: <span>bob@bobrinehart.com</span></p>
+								  <a href="https://www.linkedin.com/robert-rinehart"><i class="fa fa-linkedin"></i></a>
+								</div>
+								<div>
+								</div>
+							  </div>
+
+				</div>
+				<div class="col-3"></div>
+			</div>
+		</div>
 
 	</section>
 
