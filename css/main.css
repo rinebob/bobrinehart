@@ -1,5 +1,28 @@
-
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. IMPORT GOOGLE FONTS
+  2. GENERAL
+    -2.1 SECTION TITLE
+    -2.2 BUTTONS
+    -2.3 SOCIAL ICON
+    -2.4 PRE LOADER
+    -2.5 SCROLL TO UP
+  3. HERO AREA 
+  4. NAVBAR
+  5. PROJECTS SECTION
+  6. SKILLS SECTION
+  7. EXPERIENCE SECTION
+  8. CONTACT SECTION
+  
+  ------------------------------------- */
+  /* ==========================================================================
+   1. IMPORT GOOGLE FONTS
+   ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+/* ==========================================================================
+   2. GENERAL
+   ========================================================================== */
 
 /* * {
 	border: black 1px solid;
@@ -10,37 +33,19 @@ body {
 	color: #333;
 	font-size: 14px;
 	font-weight: 400;
-	background: #fff;
+	/* background: #fff; */
+	background-color: darkslategrey;
 	overflow-x: hidden;
   }
 
-.bob-brand {
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 40px;
-}
+/* ==========================================================================
+   2.1 Section Title
+   ========================================================================== */
 
-#hero-banner {
-	/* background: url(../img/hero-area.jpg) fixed no-repeat; */
-	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
-	background-size: cover;
-	color: #fff;
-	overflow: hidden;
-	position: relative;
-	padding: 200px 0 130px;
-}
-
-#experience {
-	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
-	background-size: cover;
-	color: #fff;
-	overflow: hidden;
-	position: relative;
-}
-
+   
 .section {
-	padding: 80px;
+	padding: 20px 80px;
+	color: lightcyan;
 }
 
 .section-header {
@@ -54,7 +59,8 @@ body {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #333;
+	/* color: #333; */
+	color: aliceblue;
 	position: relative;
 }
 
@@ -64,7 +70,9 @@ body {
 
 .section-header .section-subtitle {
 	margin-top: 15px;
-	color: #333;
+	/* color: #333; */
+	color: lightcyan;
+	background-color: darkcyan;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -76,3 +84,126 @@ body {
 	border-top: 2px solid #61D2B4;
 	margin-top: 15px;
 }
+
+/* ==========================================================================
+   2.x Section Intervals (breaks between sections)
+   ========================================================================== */
+
+.interval {
+	height: 100px;
+	width: 100%;
+	/* background-color: cadetblue; */
+}
+
+#interval-1 {
+	/* background: url(../img/POD51-01bl.jpg) fixed no-repeat; */
+	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
+	background-size: cover;
+}
+#interval-2 {
+	background: url(../img/POD36-01bb.jpg) fixed no-repeat;
+	background-size: cover;
+}
+#interval-3 {
+	background: url(../img/POD44-01an.jpg) fixed no-repeat;
+	background-size: cover;
+}
+#interval-4 {
+	background: url(../img/POD51-01bl.jpg) fixed no-repeat;
+	background-size: cover;
+}
+#interval-5 {
+	background: url(../img/POD45-01-src1.0.jpg) fixed no-repeat;
+	background-size: cover;
+}
+#interval-6 {
+	background: url(../img/POD41-01ai.jpg) fixed no-repeat;
+	background-size: cover;
+}
+
+
+
+/* ==========================================================================
+   3. Hero Area
+   ========================================================================== */
+
+#hero-banner {
+	/* background: url(../img/POD51-01bl.jpg) fixed no-repeat; */
+	background-size: cover;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	padding: 200px 0 130px;
+}
+
+#hero-row {
+	margin: 0 100px;
+}
+
+.cover-photo {
+
+}
+
+#cover-image {
+	height: 200px;
+	width: 200px;
+}
+
+/* ==========================================================================
+   4. Navbar Style
+   ========================================================================== */
+   .bob-brand {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
+
+	background: transparent;
+}
+
+/* ==========================================================================
+   4. Projects Section
+   ========================================================================== */
+#projects {
+	/* background-color: mediumturquoise;  */
+	/* background-size: cover; */
+}
+
+.project-desc {
+	text-align: left;
+}
+
+.project-link {
+	font-size: medium;
+	margin: 10px 0 20px 0;
+	color: mediumorchid;
+}
+
+ 
+   /* ==========================================================================
+   5. Skills Section
+   ========================================================================== */
+#tech-skills {
+	/* background-color: mediumturquoise;  */
+	/* background-size: cover; */
+}
+
+   /* ==========================================================================
+   6. Experience Section
+   ========================================================================== */
+#experience {
+	/* background-color: mediumturquoise;  */
+	color: #fff;
+	/* overflow: hidden;
+	position: relative; */
+}
+
+   /* ==========================================================================
+   7. Contact Section
+   ========================================================================== */
+
+#contact {
+	color: lightcyan;
+}
+
+
