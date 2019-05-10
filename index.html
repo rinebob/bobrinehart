@@ -9,23 +9,26 @@
 <!-- Bootstrap CSS -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css">    
+<link rel="stylesheet" href="css/main.css">
+
 
 
 </head>
 <body>
-	<header>
-		<nav>
-			<div class="row">
-				<div class="col-3 nav-header">
-				<span><h3>Bob Rinehart</h3></span>
-				<span><p>- Full Stack Developer</p></span>
+	<header id="hero-banner">
+		<!-- <nav class="navbar nav-fill fixed-top scrolling-navbar"> -->
+		<nav class="nav-fill fixed-top">
+			<div class="row align-items-center">
+				<div class="col-3 nav-header justify-content-start text-center">
+				<!-- <span class="bob-brand">Bob Rinehart</span><span> - Full Stack Developer</span> -->
+				<span class="bob-brand">Bob Rinehart</span>
+				<!-- <span><p>- Full Stack Developer</p></span> -->
 				
 				</div>
-				<div class="col-9 nav-main">
-					<ul class="nav justify-content-end">
+				<div class="col-9 nav-main justify-content-end">
+					<ul class="nav">
 						<li class="nav-item">
-							<a class="nav-link active" href="#home">Home</a>
+							<a class="nav-link active" href="#top">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#projects">Projects</a>
@@ -50,19 +53,21 @@
 			</div>
 
 		</nav>
+		<!-- <div id="hero-banner" class="container-fluid"> -->
 		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="">
-
+			<div class="row justify-content-center" id="hero-row">
+				<div class="col-4 text-center">
+					<img class="cover-photo" id="cover-image" src="./img/POD48-01ad.jpg" alt="">
 				</div>
-
+				<div class="col-8 text-center">
+					<h2>Meet Bob Rinehart - Full Stack Developer</h2>
+				</div>
 			</div>
-
 		</div>
-
 	</header>
+	<div class="interval" id="interval-1"></div>
 
-	<section id="projects">
+	<section id="projects" class="section">
 		<div class="container section-header">
 			<h2 class="section-title bg-primary text-white justify-content-center">Projects</h2>
 			<hr class="horz-line">
@@ -75,30 +80,279 @@
 					<h3>VMC</h3>
 					<p>Valley Medical Center Foundation</p>
 					<p>Elizabid Online Auction / Bidding App</p>
+					<div class="project-link" >
+						<a class="project-link" href="#">dv1.elizabid.com/guest</a>
+					</div>
+					<div class="project-desc">
+						<ul>
+							<li>Lead a team of ~8 developers to build an app for creating and managing silent auctions that support charitable fundraising events.</li>
+							<li>Auction organizer an create an auction, inventory donated items, create packages to be auctioned, register bidders, conduct the auction and manage delivery of packages won by bidders.</li>
+							<li>Bidding process is conducted online in real-time using sockets.</li>
+							<li>VMC auctions raise over $500,000 in charitable donations each year.</li>
+						</ul>
+					</div>
 				</div>
 				<div class="col-4">
-					<p>Tryppio</p>
+					<div class="icon">
+						<i class="lnr lnr-pencil"></i>
+					</div>
+					<h3>Tryppio</h3>
+					<p>Re-imagined Google Earth Panoramio Layer</p>
+					<p>Travel related social media website</p>
+					<div class="project-link" >
+						<a class="project-link" href="#">www.tryppio.com</a>
+					</div>
+					<div class="project-desc">
+						<ul>
+							<li>Recreation of Google Earth ‘Panoramio’ layer with new extensions.</li>
+							<li>Enables travelers to find / research travel destinations and meet local businesses, guides and experts.</li>
+							<li>Users upload geo-located images and create profiles for others to search.  Search feature returns database of images displayed on a Google Map.</li>
+							<li>User can click an image to learn more or open a profile of the creator. Travelers can chat real- time with locals to meet, book reservations, create trip plans etc.</li>
+							<li>Revenue opportunity through monthly fee from locals for maintaining profiles and advertising.</li>
+						</ul>
+					</div>
 				</div>
 				<div class="col-4">
-					<p>Iron Condor</p>
+					<div class="icon">
+						<i class="lnr lnr-pencil"></i>
+					</div>
+					<h3>Project 3</h3>
+					<p>Project Description</p>
+					<p>More info</p>
+					<div class="project-link" >
+						<a class="project-link" href="#">www.project3.com</a>
+					</div>
+					<div class="project-desc">
+						<ul>
+							<li>Lorem Ipsum.  Recreation of Google Earth ‘Panoramio’ layer with new extensions.</li>
+							<li>Lorem Ipsum.  Enables travelers to find / research travel destinations and meet local businesses, guides and experts.</li>
+							<li>Lorem Ipsum.  Users upload geo-located images and create profiles for others to search.  Search feature returns database of images displayed on a Google Map.</li>
+							<li>Lorem Ipsum.  User can click an image to learn more or open a profile of the creator. Travelers can chat real- time with locals to meet, book reservations, create trip plans etc.</li>
+							<li>Lorem Ipsum.  Revenue opportunity through monthly fee from locals for maintaining profiles and advertising.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 		</div>
 	</section>
-	<section id="tech-skills">
-		
-	</section>
-	<section id="experience">
+	<div class="interval" id="interval-2"></div>
+	<section id="tech-skills" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Technical Skills</h2>
+				<hr class="horz-line">
+				<p class="section-subtitle">Some pithy comments about my coding capability...</p>
+			</div>
+			<div class="card-deck">
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Languages:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">MEAN</li>
+								<li class="list-group-item">Angular</li>
+								<li class="list-group-item">Javascript (ES5, ES6)</li>
+								<li class="list-group-item">Typescript</li>
+								<li class="list-group-item">Python</li>
+								<li class="list-group-item">Java</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Front-end:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">SPAs</li>
+								<li class="list-group-item">Angular Material</li>
+								<li class="list-group-item">Bootstrap</li>
+								<li class="list-group-item">jQuery</li>
+								<li class="list-group-item">AJAX</li>
+								<li class="list-group-item">EJS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="..." class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Server:</h5>
+						<div class="card" >
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Node.js</li>
+								<li class="list-group-item">Express</li>
+								<li class="list-group-item">Django</li>
+								<li class="list-group-item">Flask</li>
+								<li class="list-group-item">CRUD APIs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="card-deck">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Databases:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">MongoDB</li>
+									<li class="list-group-item">Mongoose</li>
+									<li class="list-group-item">MySQL</li>
+									<li class="list-group-item">SQLite</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Deployment / Tools:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Amazon AWS EC2</li>
+									<li class="list-group-item">Plesk</li>
+									<li class="list-group-item">Nginx</li>
+									<li class="list-group-item">PuTTY</li>
+									<li class="list-group-item">Git / Github</li>
+									<li class="list-group-item">GitKraken</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Methodologies:</h5>
+							<div class="card" >
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">OOP</li>
+									<li class="list-group-item">MVC / MTV / MVVM</li>
+									<li class="list-group-item">REST</li>
+									<li class="list-group-item">APIs</li>
+									<li class="list-group-item">Agile</li>
+									<li class="list-group-item">Scrum</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				</div>
 
+		</div>
 	</section>
-	<section id="inspiration">
+	<div class="interval" id="interval-3"></div>
+	<section id="experience" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Professional Experience</h2>
+				<hr class="horz-line">
+				<p class="section-subtitle">Even more compelling text about my exemplary work experience...</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-xs-12">
+						<span class="icon">
+							<i class="lnr lnr-rocket"></i>
+						</span>
+						<div class="text">
+							<h4>Madrone Hill Group, Saratoga, CA  2009 - Present</h4>
+							<p>Founder / CEO - Systems Designer / Developer - Algorithmic Trading</p>
+							<p>Design and build complex algorithms for automating buy/sell orders in eletronically traded financial markets.</p>
+							<ul>
+								<li>Designed algorithms based on linear-regression models to display bounding envelopes and channels on securities charts and generate position entry and exit orders.</li>
+								<li>Designed volatility-based algorithms to filter and validate order placement based on market price dynamics.</li>
+								<li>Designed systems to automate analysis and manage positions for index option credit spread strategies.</li>
+							</ul>
+							<p></p>
+						</div>
+						<span class="icon">
+							<i class="lnr lnr-laptop-phone"></i>
+						</span>
+						<div class="text">
+							<h4>Summit Assets Group, San Jose, CA / DBNR LLC, San Jose CA  2009 - 2017</h4>
+							<p>Director of Acquisitions / Lead Systems Developer - Real Estate Investment</p>
+							<p>Managed analysis and acquisition of real estate investments.  Designed and built CRM system to manage investment analysis and acquisition process.</p>
+							<ul>
+								<li>Analyzed investment potential of over 100,000 residential properties across the US.</li>
+								<li>Purchased and rehabbed 33 housees and sold to low-income buyers to enable wealth building.</li>
+								<li>CRM system increased acquisition rate from under 10% to over 33%.</li>
+							</ul>
+						</div>
+						<div class="text">
+							<h4>Additional Work Experience</h4>
+						</div>
+						<span class="icon">
+							<i class="lnr lnr-layers"></i>
+						</span>
+						<div class="text">
+							<h4>EnData Solutions, San Carlos, CA</h4>
+							<p>Founder / CEO</p>
+							<ul>
+								<li>Designed mobile app for collecting, analyzing and visualizing data gathered during environmental investigations of chemically contaminated industrial facilities.</li>
+								<li>App automated industry-standard paper-based manual data collection and analysis systems saving hundreds of hours per investigation through automation of laborious manual methods and processes.</li>
+							</ul>
+						</div>
+						<span class="icon">
+							<i class="lnr lnr-cog"></i>
+						</span>
+						<div class="text">
+							<h4>Mobil Exploration and Production, Bakersfield, CA</h4>
+							<p>Data Visualization Technician</p>
+							<ul>
+								<li>Created topographic maps of oil reservior locations totaling billions of barrels of oil.</li>
+								<li>Maps were used to determine target locations for company to bid greater than $10 billion to acquire drilling rights from US Federal Government lease sales.</li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
+			</div>
+		</div>
 	</section>
-	<section id="articles">
-
+	<div class="interval" id="interval-4"></div>
+	<section id="inspiration" class="section">
+		<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Inspiration</h2>
+					<hr class="horz-line">
+					<p class="section-subtitle">Here is what inspires me...</p>
+				</div>
+			</div>
 	</section>
-	<section id="contact">
+	<div class="interval" id="interval-5"></div>
+	<section id="articles" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Articles</h2>
+				<hr class="horz-line">
+				<p class="section-subtitle">Some pithy comments about my coding capability...</p>
+			</div>
+		</div>
+	</section>
+	<div class="interval" id="interval-6"></div>
+	<section id="contact" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col">
+					<div class="contact-me text-center">
+						<h3>Contact Me</h3>
+						<div class="contact-address">
+							<p>Silicon Valley, CA </p>
+							<p class="phone">Phone: <span>(408) 438-7078</span></p>
+							<p class="email">E-mail: <span>bob@bobrinehart.com</span></p>
+							<a href="https://www.linkedin.com/robert-rinehart"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3"></div>
+			</div>
+		</div>
 
 	</section>
 
