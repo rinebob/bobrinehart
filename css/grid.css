@@ -1,24 +1,179 @@
-* {
+/* ------------------------------------- */
+/* GRID LAYOUTS 
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  General
+  1. Navigation Bar
+  3. HERO AREA 
+  5. PROJECTS SECTION
+  6. SKILLS SECTION
+  7. EXPERIENCE SECTION
+  inspiration
+  articles
+  8. CONTACT SECTION
+  
+  ------------------------------------- */
+  /* ==========================================================================
+   GENERAL
+   ========================================================================== */
+   * {
 	border: black 1px solid;
 }
 
 .container {
-	/* display: inline-grid; */
 	display: grid;
+	/* display: inline-grid; */
 }
+
+
+  /* ==========================================================================
+   1. NAVIGATION BAR
+   ========================================================================== */
+
+#container-nav {
+	grid-template-columns: [col1-start] 4fr [col1-end col2-start] 12fr [col2-end];
+	grid-template-rows: [row1-start] 100px [row1-end] ;
+	align-items: center;
+	justify-items: stretch;
+	grid-column-gap: 10px;
+	justify-self: stretch;
+	padding: 0 50px;
+}
+
+#item-brand {
+	grid-column-start: col1-start;
+	grid-column-end: col1-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+#item-navLinks {
+	grid-column-start: col2-start;
+	grid-column-end: col2-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+
+  /* ==========================================================================
+   HERO AREA
+   ========================================================================== */
+#container-hero {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 1fr [col2-end col3-start] 2fr [col3-end col4-start] 40px [col4-end];
+	grid-template-rows: [row1-start] 400px [row1-end] ;
+	grid-column-gap: 10px;
+	justify-self: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+}
+
+#item-cvrPhotoCtnr {
+	grid-column-start: col2-start;
+	grid-column-end: col2-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+	padding: 40px 10px;
+	margin: 40px 10px;
+}
+#item-cvrPhoto {
+	/* grid-column-start: col2-start;
+	grid-column-end: col2-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end; */
+	padding: 40px 10px;
+}
+#item-helloText {
+	grid-column-start: col3-start;
+	grid-column-end: col3-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+	margin: 40px 10px;
+	padding: 120px 80px;
+}
+
+  /* ==========================================================================
+   PROJECTS AREA
+   ========================================================================== */
+
+#container-project {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 1fr [col2-end col3-start] 4fr [col3-end col4-start] 40px [col4-end];
+	grid-template-rows: [row1-start] 50px [row1-end row2-start] 50px [row2-end row3-start] 300px [row3-end]  ;
+	grid-column-gap: 10px;
+	/* justify-self: stretch;
+	align-items: stretch;
+	justify-items: stretch; */
+
+}
+
+#item-icon {
+	grid-column-start: col2-start;
+	grid-column-end: col2-end;
+	grid-row-start: row1-start;
+	grid-row-end: row2-end;
+	/* margin: 40px 10px;
+	padding: 120px 80px; */
+}
+#item-proj-hdr {
+	grid-column-start: col3-start;
+	grid-column-end: col3-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+	/* margin: 40px 10px;
+	padding: 120px 80px; */
+}
+#item-proj-sub {
+	grid-column-start: col3-start;
+	grid-column-end: col3-end;
+	grid-row-start: row2-start;
+	grid-row-end: row2-end;
+	/* margin: 40px 10px;
+	padding: 120px 80px; */
+}
+/* #container-projects {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 1fr [col2-end col3-start] 4fr [col3-end col4-start] 40px [col4-end];
+	grid-template-rows: [row1-start] 100px [row1-end row2-start] auto [row2-end]  ;
+	grid-column-gap: 10px;
+	justify-self: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+
+} */
+
+
+
+     /* ==========================================================================
+   HERO AREA
+   ========================================================================== */
+
+     /* ==========================================================================
+   HERO AREA
+   ========================================================================== */
+
+/* ==========================================================================
+   TEST CASES / CODE REPO - DO NOT DISPLAY
+   ========================================================================== */
 
 #container1 {
 	grid-template-columns: [col1-start] 40px [col1-end col2-start] 50px [col2-end col3-start] 200px [col3-end col4-start] auto [col4-end col5-start] 200px [col5-end col6-start] 50px [col6-end col7-start] 40px [col7-end col8-start];
 	
 	grid-template-rows: [row1-start] 100px [row1-end row2-start] 300px [row2-end row3-start] auto [row3-end row4-start] 5%;
 
-	align-items: center;
-	justify-items: center;
+	/* align-items: center;
+	justify-items: center; */
 
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	
 }
+
+#container2 {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 50px [col2-end col3-start] 200px [col3-end col4-start] auto [col4-end col5-start] 200px [col5-end col6-start] 50px [col6-end col7-start] 40px [col7-end col8-start];
+	
+	grid-template-rows: [row1-start] 100px [row1-end row2-start] 300px [row2-end row3-start] auto [row3-end row4-start] 5%;
+
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+
 
 .item-1 {
 	grid-column-start: col1-start;
@@ -32,6 +187,17 @@
 	grid-row-start: row2-start;
 	grid-row-end: row2-end;
 }
+
+.item-2a {
+	grid-column-start: col4-start;
+	grid-column-end: col4-end;
+	grid-row-start: row2-start;
+	grid-row-end: row2-end;
+
+	justify-self: center;
+	align-self: center;
+}
+
 .item-3 {
 	grid-column-start: col5-start;
 	grid-column-end: col7-end;
@@ -63,14 +229,7 @@
 
 }
 
-#container2 {
-	grid-template-columns: [col1-start] 40px [col1-end col2-start] 50px [col2-end col3-start] 200px [col3-end col4-start] auto [col4-end col5-start] 200px [col5-end col6-start] 50px [col6-end col7-start] 40px [col7-end col8-start];
-	
-	grid-template-rows: [row1-start] 100px [row1-end row2-start] 300px [row2-end row3-start] auto [row3-end row4-start] 5%;
 
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-}
 
 .item-11 {
 	grid-column-start: col1-start;
