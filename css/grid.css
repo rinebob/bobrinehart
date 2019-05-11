@@ -1,0 +1,109 @@
+* {
+	border: black 1px solid;
+}
+
+.container {
+	/* display: inline-grid; */
+	display: grid;
+}
+
+#container1 {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 50px [col2-end col3-start] 200px [col3-end col4-start] auto [col4-end col5-start] 200px [col5-end col6-start] 50px [col6-end col7-start] 40px [col7-end col8-start];
+	
+	grid-template-rows: [row1-start] 100px [row1-end row2-start] 300px [row2-end row3-start] auto [row3-end row4-start] 5%;
+
+	align-items: center;
+	justify-items: center;
+
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	
+}
+
+.item-1 {
+	grid-column-start: col1-start;
+	grid-column-end: col3-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+.item-2 {
+	grid-column-start: col4-start;
+	grid-column-end: col4-end;
+	grid-row-start: row2-start;
+	grid-row-end: row2-end;
+}
+.item-3 {
+	grid-column-start: col5-start;
+	grid-column-end: col7-end;
+	grid-row-start: row3-start;
+	grid-row-end: row3-end;
+}
+
+.item-4 {
+	grid-column-start: col2-start;
+	grid-column-end: col4-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+
+.item-5 {
+	grid-column-start: col4-start;
+	grid-column-end: col7-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+
+.item-6 {
+	grid-column-start: col4-start;
+	grid-column-end: col4-end;
+	grid-row-start: row3-start;
+	grid-row-end: row3-end;
+	justify-self: center;
+	align-self: center;
+
+}
+
+#container2 {
+	grid-template-columns: [col1-start] 40px [col1-end col2-start] 50px [col2-end col3-start] 200px [col3-end col4-start] auto [col4-end col5-start] 200px [col5-end col6-start] 50px [col6-end col7-start] 40px [col7-end col8-start];
+	
+	grid-template-rows: [row1-start] 100px [row1-end row2-start] 300px [row2-end row3-start] auto [row3-end row4-start] 5%;
+
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.item-11 {
+	grid-column-start: col1-start;
+	grid-column-end: col3-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+.item-12 {
+	grid-column-start: col4-start;
+	grid-column-end: col4-end;
+	grid-row-start: row2-start;
+	grid-row-end: row2-end;
+}
+.item-13 {
+	grid-column-start: col5-start;
+	grid-column-end: col5-end;
+	grid-row-start: row2-start;
+	grid-row-end: row2-end;
+	align-self: center;
+	justify-self: center;
+}
+
+.item-14 {
+	grid-column-start: col2-start;
+	grid-column-end: col4-end;
+	grid-row-start: row1-start;
+	grid-row-end: row1-end;
+}
+
+.item-15 {
+	justify-self: end;
+	grid-column-start: col4-start;
+	/* grid-column-end: col7-end; */
+	grid-row-start: row3-start;
+	/* grid-row-end: row3-end; */
+}
