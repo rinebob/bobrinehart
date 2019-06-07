@@ -1,0 +1,82 @@
+/* ------------------------------------- */
+/* GRID LAYOUTS 
+/* TABLE OF CONTENTS
+/* -------------------------------------
+NAV BAR
+HERO 
+SKILLS 
+PROJECTS
+EXPERIENCE
+FOOTER
+  
+  ------------------------------------- */
+  /* ==========================================================================
+   GENERAL
+   ========================================================================== */
+/* * {
+	border: white 1px solid;
+} */
+
+.container {
+	display: grid;
+	height: 100%;
+	grid-gap: 10px;
+	/* grid-template-columns: repeat(12, 1fr); */
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto auto auto auto auto 200px;
+	grid-template-areas: 
+		". t t t t t t t t t t ."
+		". c c c h h h h h h h ."
+		". s s s s s s s s s s ."
+		". p p p p p p p p p p ."
+		". e e e e e e e e e e ."
+		". f f f f f f f f f f ." ;
+
+	/* align-content: end; */
+	/* justify-content: center; */
+	/* justify-items: center; */
+
+
+}
+.top {
+	grid-area: t;
+	/* display: flex; */
+}
+
+.hero {
+	grid-area: h;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.hdr {
+	align-items: center;
+	justify-items: center;
+	
+}
+
+.cvr-photo {
+	grid-area: c;
+	display: grid;
+	/* padding: 40px 10px;
+	margin: 40px 10px; */
+}
+
+.skills {
+	grid-area: s;
+	display: grid;
+	
+}
+
+.projects {
+	grid-area: p;
+}
+
+.exp {
+	grid-area: e;
+}
+
+.footer {
+	grid-area: f;
+}

@@ -1,0 +1,182 @@
+/* ------------------------------------- */
+/* STYLES
+/* TABLE OF CONTENTS
+/* -------------------------------------
+GENERAL
+NAV BAR
+HERO 
+SKILLS 
+PROJECTS
+EXPERIENCE
+FOOTER
+
+------------------------------------- */
+/* ==========================================================================
+GENERAL
+========================================================================== */
+
+
+/* IMPORT GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+
+/* * {
+	border: white 1px solid;
+} */
+
+html {
+	font-size: 14px;
+	font-weight: 400;
+	/* color: #15a0bf; */
+	/* color: #f2ca33; */
+
+}
+
+body {
+	background-color: #1c1e23;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+
+.box {
+	border-radius: 10px;
+	/* color: #15a0bf; */
+	color: #53e0ff;
+	/* color: #f2ca33; */
+}
+
+.bannertxt {
+	text-align: center;
+	margin: 10px auto;
+}
+
+.content {
+	/* border: 3px #c517b6 solid; */
+	margin: 10px 20px;
+	padding: 20px;
+	border-radius: 10px;
+	
+}
+
+/* ==========================================================================
+CONTAINER
+========================================================================== */
+.container {
+	
+	
+}
+
+
+/* ==========================================================================
+NAVIGATION BAR
+========================================================================== */
+.top {
+	background-color: #1a3f4a;
+	/* text-align: center; */
+	
+}
+
+.bob-brand {
+	background-color: #1a3f4a;
+	display: inline-block;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #15a0bf;
+	margin: 0 0 0 20px;
+}
+
+.nvs {
+	background-color: #1a3f4a;
+	display: inline-block;
+	margin-left: auto;
+	align-self: center;
+	/* align-items: center;
+	text-align: center; */
+}
+
+/* ==========================================================================
+HERO
+========================================================================== */
+
+.hero {
+	background-color: #173158;
+
+}
+
+.cvr-photo {
+	background-color: #173158;
+	/* padding: 40px 10px;
+	margin: 40px 10px; */
+}
+
+.photo {
+	margin: 40px;
+	padding: 40px;
+}
+
+.hdr {
+	/* padding: 40px; */
+	/* text-align: center;  */
+	
+	/* border: 1px white solid; */
+}
+
+
+/* ==========================================================================
+TECHNICAL SKILLS
+========================================================================== */
+
+.skills {
+	background-color: #461c48;
+
+
+}
+
+.skills-content {
+	border: 1px #c517b6 solid;
+}
+
+/* ==========================================================================
+PROJECTS
+========================================================================== */
+
+.projects {
+	background-color: #2d1d32;
+
+}
+
+.projects-content {
+	border: 1px #d90171 solid;
+}
+
+/* ==========================================================================
+EXPERIENCE
+========================================================================== */
+
+.exp {
+	background-color: #253124;
+
+}
+
+.exp-content {
+	border: 1px #7bd938 solid;
+}
+
+/* ==========================================================================
+FOOTER
+========================================================================== */
+
+.footer {
+	background-color: #1a3f4a;
+	padding: 0 20px;
+	
+}
+.footer-content {
+	border: 1px #15a0bf solid;
+	margin: 10px;
+	padding: 0 20px;
+	border-radius: 10px;
+}
