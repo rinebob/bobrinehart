@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Mukta Mahee', sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	display: none;
+}
+
+nav ul a {
+	display: block;
+	background: #0d1317;
+	padding: 20px;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ad343e;
+	transition: color 1s ease, background 1s ease, padding 1s ease;
+}
+
+nav ul a:hover {
+	background: #474747;
+	color: #e0e0ce;
+	padding-left: 30px;
+
+}
+
+.nav-container img {
+	width: 100px;
+	align-self: center;
+}
+
+.nav-container {
+	padding: 20px;
+	background: #474747;
+	border-bottom: 3px solid #ad343e;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.bar {
+	width: 30px;
+	height: 3px;
+	margin: 7px;
+	background: #ad343e;
+	
+}
+.btn {
+	padding: 2px;
+	display: inline-block;
+	border: 2px solid #ad343e;
+	align-self: center;
+}
+
+header {
+	min-height: 100vh;
+	background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/POD51-01bl.jpg)
+		center/cover fixed no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+
+	/* background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed */
+
+nav {
+	flex: 0 0 auto;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.banner {
+	flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.banner img {
+	width: 200px;
+}
+
+.banner h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #ad343e;
+}
+.banner h3 {
+	text-transform: capitalize;
+	font-size: 30px;
+	color: #0d1317;
+}
+
+.and {
+	color: #f5f3f5;
+}
+
+.banner-icons {
+	padding: 20px;
+
+}
+.banner-icons a {
+	display: inline-block;
+	font-size: 30px;
+	background: #474747;
+	padding: 5px 10px;
+	margin: 0 10px;
+	border-radius: 50%;
+	color: #f5f3f5;
+	transition: color 1s ease, transform 1s ease;
+}
+.banner-icons a:hover {
+	color: #ad343e;
+	transform: translateY(-10px)
+}
+
+@media screen and (min-width:776px){
+	.nav-container{
+		display: none;
+	}
+	nav ul{
+		display: flex !important;
+		flex-wrap: wrap;
+		justify-content: center;
+		background: rgba(13,19,23,0.8);
+	}
+	nav ul a {
+		background: transparent;
+	}
+	nav ul a:hover {
+		background: transparent;
+		padding-left: 20px;
+	}
+}
+
+/* SERVICES */
+
+.services {
+	min-height: 80vh;
+	background: url(../img/POD40-01ab.jpg)
+		center/cover fixed no-repeat;
+	display: felx;
+	align-items: center;
+}
+
+.service {
+	color: #f5f3f5;
+	display: flex;
+	margin: 40px;
+
+}
+
+.service-icon {
+	align-self: center;
+	font-size: 60px;
+	margin-right: 20px;
+	padding: 20px;
+	border: 3px solid #f5f3f5;
+	border-radius: 50%;
+}
+
+.service-text h3 {
+	text-transform: uppercase;
+
+}
+
+.service-text p {
+	line-height: 2;
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 576px){
+	.services-center {
+		width: 70%;
+		
+	}
+}
+
+@media screen and (min-width: 776px){
+	.services-center {
+		width: 50%;
+	}
+	.service-text p{
+		width: 70%;
+	}
+}
