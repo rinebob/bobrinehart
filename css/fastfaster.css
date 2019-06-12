@@ -41,6 +41,7 @@ nav ul a:hover {
 	border-bottom: 3px solid #ad343e;
 	display: flex;
 	justify-content: space-between;
+	overflow: hidden;
 
 }
 
@@ -143,7 +144,7 @@ nav {
 	}
 }
 
-/* SERVICES */
+/* ############################## SERVICES ############################## */
 
 .services {
 	min-height: 80vh;
@@ -194,3 +195,221 @@ nav {
 		width: 70%;
 	}
 }
+
+/* ############################## PROJECTS ############################## */
+
+.projects {
+	padding: 0 0 100px 0;
+	background: #f5f3f5;
+
+}
+
+.title {
+	padding: 50px 0;
+}
+.title h2 {
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #474747;
+
+}
+
+.title-underline {
+	background: #ad343e;
+	width: 100px;
+	height: 4px;
+	margin: 10px auto;
+}
+
+.projects img {
+	width: 100%;
+	display: block;
+	transition: opacity 2s ease, transform 2s ease; 
+}
+
+.project {
+	background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+	overflow: hidden;
+}
+
+.projects img:hover {
+	opacity: 0.3;
+	cursor: pointer;
+	transform: scale(1.3);
+
+}
+/* flexbox */
+/* @media screen and (min-width: 576px){
+	.projects-center {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.project {
+		flex: 0 0 calc(50%);
+	}
+}
+@media screen and (min-width: 992px){
+	.project {
+		flex: 0 0 calc(33.3333%);
+	}
+} */
+
+/* css grid */
+@media screen and (min-width: 576px){
+	.projects-center {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (min-width: 992px){
+	.projects-center {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* ############################## ABOUT US and FILLER ############################## */
+
+.about {
+	min-height: 100vh;
+	padding: 100px 0;
+	background: url(../img/POD44-01an.jpg)center/cover fixed no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.about-card {
+	background: rgba(255,255,255,0.6);
+	text-align: center;
+	padding: 60px 40px;
+}
+
+.about-card h3 {
+	font-size: 40px;
+	text-transform: capitalize;
+}
+
+.about-card .fa-car {
+	font-size: 60px;
+	color: #ad343e;
+	margin: 20px 0;
+}
+
+.about-card p {
+	line-height: 2;
+}
+
+@media screen and (min-width: 776px) {
+	.about-card {
+		max-width: 50%;
+		border-radius: 30px;
+	}
+	.about-card p {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.filler {
+	min-height: 60vh;
+	background: url(../img/POD48-01ad.jpg)center/cover fixed no-repeat;
+}
+
+/* ############################## CONTACT ############################## */
+
+.contact {
+	min-height: 80vh;
+	background: url(../img/POD47-01aa.jpg)center/cover fixed no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.contact-card {
+	flex: 0 0 80%;
+	padding: 40px 0;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	flex: 0 0 60%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+form input {
+	margin: 10px 0;
+
+}
+
+form h3 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #ad343e;
+}
+form input, form textarea {
+	padding: 5px;
+	border: 3px solid #ad343e;
+
+}
+
+input::placeholder, textarea::placeholder {
+	text-transform: uppercase;
+	color: #0d1317;
+}
+
+.form-btn {
+	margin: 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	padding: 5px;
+	background: #ad343e;
+	color: #f5f3f5;
+	transition: color 1s ease 2s, background 1s ease-in-out;
+}
+
+.form-btn:hover {
+	color: #ad343e;
+	background: #f5f3f5;
+}
+
+/* ############################## FOOTER ############################## */
+
+footer {
+	background: #0d1317;
+	padding: 60px 0;
+	text-align: center;
+
+}
+
+.footer-icons a {
+	display: inline-block;
+	font-size: 30px;
+	margin: 0 10px 20px 10px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	background: #f5f3f5;
+	color: #0d1317;
+}
+
+footer p {
+	color: #f5f3f5;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
