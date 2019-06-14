@@ -48,7 +48,7 @@ body {
 
 .bannertxt {
 	text-align: center;
-	margin: 10px auto;
+	margin: 20px auto;
 }
 
 .content {
@@ -76,6 +76,31 @@ NAVIGATION BAR
 	/* text-align: center; */
 	
 }
+.nav-container {
+	display: flex;
+	padding: 20px;
+	/* justify-content: space-between; */
+	overflow: hidden;
+	
+	/* position: fixed; */
+	width: 100%;
+	z-index: 10;
+}
+.barbtn {
+	padding: 2px;
+	display: inline-block;
+	border: 2px solid #53e0ff;
+	align-self: center;
+	justify-self: end;
+}
+
+.bar {
+	width: 30px;
+	height: 3px;
+	margin: 7px;
+	background: #53e0ff;
+	
+}
 
 .bob-brand {
 	background-color: #1a3f4a;
@@ -86,6 +111,27 @@ NAVIGATION BAR
 	font-size: 3rem;
 	color: #15a0bf;
 	margin: 0 0 0 20px;
+}
+
+.navitems {
+	flex: 0 0 auto;
+	/* display: flex; */
+}
+
+.navitems ul {
+	list-style-type: none;
+	display: none;
+}
+
+.navitems ul a {
+	/* display: block; */
+	/* background: #0d1317; */
+	padding: 20px;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #15a0bf;
+	transition: color 1s ease, background 1s ease, padding 1s ease;
 }
 
 .nvs {
@@ -113,8 +159,12 @@ HERO
 }
 
 .photo {
-	margin: 40px;
-	padding: 40px;
+	margin: 20px;
+	padding: 20px;
+}
+
+.photo img {
+	width: 100%;
 }
 
 .hdr {

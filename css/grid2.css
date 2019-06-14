@@ -40,13 +40,19 @@ FOOTER
 }
 .top {
 	grid-area: t;
-	/* display: flex; */
+	display: flex;
 }
+
+.cvr-photo {
+	grid-area: c;
+	display: grid;
+}
+
 
 .hero {
 	grid-area: h;
 	display: grid;
-	align-items: center;
+	align-items: start;
 	justify-items: center;
 }
 
@@ -56,12 +62,7 @@ FOOTER
 	
 }
 
-.cvr-photo {
-	grid-area: c;
-	display: grid;
-	/* padding: 40px 10px;
-	margin: 40px 10px; */
-}
+
 
 .skills {
 	grid-area: s;
