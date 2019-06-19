@@ -20,9 +20,12 @@ GENERAL
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 
-/* * {
-	border: white 1px solid;
-} */
+* {
+	/* border: white 1px solid; */
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 
 html {
 	font-size: 14px;
@@ -35,15 +38,12 @@ html {
 body {
 	background-color: #1c1e23;
 	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
 }
 
 
 .box {
 	border-radius: 10px;
-	/* color: #15a0bf; */
 	color: #53e0ff;
-	/* color: #f2ca33; */
 }
 
 .bannertxt {
@@ -79,10 +79,8 @@ NAVIGATION BAR
 .nav-container {
 	display: flex;
 	padding: 20px;
-	/* justify-content: space-between; */
-	overflow: hidden;
-	
-	/* position: fixed; */
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 	z-index: 10;
 }
@@ -110,23 +108,28 @@ NAVIGATION BAR
 	font-weight: 700;
 	font-size: 3rem;
 	color: #15a0bf;
-	margin: 0 0 0 20px;
+	/* margin: 0 0 0 20px; */
 }
 
 .navitems {
-	flex: 0 0 auto;
-	/* display: flex; */
+	/* flex: 0 0 auto; */
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-top: 15px;
 }
 
 .navitems ul {
 	list-style-type: none;
 	display: none;
+	justify-content: end;
+	align-items: center;
 }
 
 .navitems ul a {
 	/* display: block; */
 	/* background: #0d1317; */
-	padding: 20px;
+	padding: 0 20px;
 	font-size: 17px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -143,12 +146,41 @@ NAVIGATION BAR
 	text-align: center; */
 }
 
+@media screen and (min-width:776px){
+	.barbtn{
+		display: none;
+	}
+	.navitems ul {
+		display: flex !important;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+		justify-content: end;
+	}
+	/* nav ul{
+		display: flex !important;
+		flex-wrap: wrap;
+		justify-content: center;
+		background: rgba(13,19,23,0.8);
+	}
+	nav ul a {
+		background: transparent;
+	}
+	nav ul a:hover {
+		background: transparent;
+		padding-left: 20px;
+	} */
+}
+
 /* ==========================================================================
 HERO
 ========================================================================== */
 
 .hero {
 	background-color: #173158;
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
 
 }
 
@@ -167,13 +199,24 @@ HERO
 	width: 100%;
 }
 
-.hdr {
-	/* padding: 40px; */
-	/* text-align: center;  */
-	
-	/* border: 1px white solid; */
+.hero--quote {
+	padding: 0 20px;
 }
 
+/* ==========================================================================
+ABOUT
+========================================================================== */
+.about{
+	/* background-color: #39174b; */
+	background-color: #48171b;
+	
+}
+
+.about--content {
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #cd0101;
+}
 
 /* ==========================================================================
 TECHNICAL SKILLS
@@ -187,6 +230,7 @@ TECHNICAL SKILLS
 
 .skills-content {
 	border: 1px #c517b6 solid;
+	font-size: 1.5rem;
 }
 
 /* ==========================================================================
@@ -222,6 +266,11 @@ FOOTER
 .footer {
 	background-color: #1a3f4a;
 	padding: 0 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	
 }
 .footer-content {
@@ -229,4 +278,20 @@ FOOTER
 	margin: 10px;
 	padding: 0 20px;
 	border-radius: 10px;
+}
+.footer-icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.footer-icons a {
+	display: inline-block;
+	font-size: 30px;
+	margin: 20px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	background: #15a0bf;
+	color: #0d1317;
 }

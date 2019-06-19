@@ -14,13 +14,15 @@
 <!-- <link rel="stylesheet" href="css/main.css"> -->
 <link rel="stylesheet" href="css/grid2.css">
 <link rel="stylesheet" href="css/style.css">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/c325f080c2.js"></script>
 
 
 
 </head>
 <body>
 	<div class="container">
-		<div class="nav-container box top">
+		<div class="nav-container box top" id="top">
 			<h1 class="bob-brand">BOB RINEHART</h1>
 			<div class="barbtn">
 				<div class="bar"></div>
@@ -29,41 +31,39 @@
 			</div>
 			<div class="navitems">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<!-- <li><a href="#">Experience</a></li> -->
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</div>
 		</div>
 
-	<!-- <div class="container"> -->
-		<!-- <div class="box top"> -->
-			<!-- <h1 class="bob-brand">BOB RINEHART</h1> -->
-			<!-- <div class="nvs">
-				<span>Home</span>
-				<span>Skills</span>
-				<span>Projects</span>
-				<span>Experience</span>
-				<span>Contact</span>
-			</div> -->
-		<!-- </div> -->
+
 		<div class="cvr-photo box">
 			<div class="photo">
 				<img src="img/headshot_crop.jpg" alt="photo">
-				<!-- <h2>COVER PHOTO</h2> -->
 			</div>
 		</div>
 		<div class="hero box">
-			<!-- <div class="item"> -->
-				<h2 class="bannertxt">Meet</h2>
-				<h1 class="bannertxt">Bob Rinehart</h1>
-				<p class="bannertxt">Full-stack Software Developer</p>
-			<!-- </div> -->
+			<h1 class="bannertxt">Hi, I'm Bob Rinehart</h1>
+			<!-- <h1 class="bannertxt">Bob Rinehart</h1> -->
+			<h2 class="bannertxt">Full-stack Software Developer</h2>
+			<div class="hero--quote bannertxt">
+				<i class="bannertxt">To live is to express, and to express you have to create. Creation is never merely repetition. To live is to express oneself freely in creation.</i>  <p> --Bruce Lee</p>
+			</div>
+		</div>
+		<div class="about box">
+			<h2 class="bannertxt">ABOUT ME</h2>
+			<div class="about--content content">
+				<p>Hi I'm Bob and I love to code!  I started about ten years ago when I was daytrading futures and options.  I realized I needed to remove the human element (me) from my trades so I taught myself the coding language provided by the broker.  What an amazing feeling when you see your ideas executed by code!  I was hooked from that moment.</p>
+				<p>Years later, I decided I wanted a more structured environment  </p>
+			</div>
+			
 		</div>
 		
-		<div class="skills box">
+		<div class="skills box" id="skills">
 			<h2 class="bannertxt">TECHNICAL SKILLS</h2>
 			<div class="skills-content content">
 				<div class="row">
@@ -71,7 +71,7 @@
 							PROFICIENT
 					</div>
 					<div class="col skills-content content">
-						<p>Lots of cool tech</p>
+						<p>JavaScript, TypeScript, Angular, Node.js, Express, MongoDB,  Mongoose, EJS, Socket.io, jQuery, Bootstrap, AJAX, CRUD, Agile, Scrum, Git, HTML5, CSS3</p>
 					</div>
 					
 				</div>
@@ -80,66 +80,52 @@
 						EXPOSURE
 					</div>
 					<div class="col skills-content content">
-						<p>Even more cool tech</p>
+						<p>Java, Spring Boot, Eclipse, Python, Flask, Django, SQL, AWS, Plesk, nginx</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="projects box">
+		<div class="projects box" id="projects">
 			<h2 class="bannertxt">PROJECTS</h2>
 			<div class="projects-content content">
-				<div class="row">
-					<div class="col-2 projects-content content">
-							PROJECT 1
-					</div>
-					<div class="col projects-content content">
-						<p>My really cool project</p>
-					</div>
-					
-				</div>
-				<div class="row">
-					<div class="col-2 projects-content content">
-						PROJECT 2
-					</div>
-					<div class="col projects-content content">
-						<p>Another one of my really cool projects</p>
-					</div>
-				</div>
+				<h2>Elizabid - Online Auction / Real-time Bidding App</h2>
+				<hr>
+			</div>
+			<div class="projects-content content">
+				<h2>Tryppio - Social Network for Travelers</h2>
 			</div>
 		</div>
-		<div class="exp box">
+		<!-- <div class="exp box">
 			<h2 class="bannertxt">PROFESSIONAL EXPERIENCE</h2>
 			<div class="exp-content content">
 				<div class="row">
-					<div class="col-2 exp-content content">
-							JOB 1
-					</div>
+					
 					<div class="col exp-content content">
 						<p>Awesome work experience here</p>
 					</div>
 					
 				</div>
 				<div class="row">
-					<div class="col-2 exp-content content">
-						JOB 2
-					</div>
+					
 					<div class="col exp-content content">
 						<p> More awesome work experience here</p>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer box">
+		</div> -->
+		<div class="footer box" id="contact">
 			<h2 class="bannertxt">CONTACT ME</h2>
 			<div>
-				<div class="row">
-					<div class="col-3 footer-content">
-						<p>PICTURE</p>
+				<!-- <div class="row"> -->
+					<!-- <div class="col footer-content"> -->
+					<div class="footer-content">
+						<div class="footer-icons">
+							<a href="https://www.linkedin.com/in/robert-rinehart/" target="_blank"><i class="fab fa-linkedin"></i></a>
+							<a href="https://github.com/rinebob" target="_blank"><i class="fab fa-github"></i></a>
+							<a href="https://drive.google.com/file/d/1pP45f2QDeXzDzhyuN6q8Lhw2uSlOf_Po/view?usp=sharing"  target="_blank"><i class="fas fa-file-pdf"></i></a>
+						</div>
 					</div>
-					<div class="col footer-content">
-						<p>CONTACT INFO</p>
-					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 			
 		</div>

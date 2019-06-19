@@ -23,10 +23,11 @@ FOOTER
 	grid-gap: 10px;
 	/* grid-template-columns: repeat(12, 1fr); */
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto auto auto auto auto 200px;
+	grid-template-rows: auto auto auto auto auto auto 200px;
 	grid-template-areas: 
 		". t t t t t t t t t t ."
 		". c c c h h h h h h h ."
+		". a a a a a a a a a a ."
 		". s s s s s s s s s s ."
 		". p p p p p p p p p p ."
 		". e e e e e e e e e e ."
@@ -40,7 +41,7 @@ FOOTER
 }
 .top {
 	grid-area: t;
-	display: flex;
+	/* display: flex; */
 }
 
 .cvr-photo {
@@ -62,22 +63,29 @@ FOOTER
 	
 }
 
+.about {
+	grid-area: a;
+	display: grid;
+	
+}
 
 
 .skills {
 	grid-area: s;
 	display: grid;
-	
 }
 
 .projects {
 	grid-area: p;
+	display: grid;
 }
 
 .exp {
 	grid-area: e;
+	display: grid;
 }
 
 .footer {
 	grid-area: f;
+	display: grid;
 }
